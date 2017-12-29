@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    margin: 15px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+button {
+    marging-left: 15px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Landing Page</title>
+
+    <body>
+        <h1>Dojo Page</h1>
+        <form action="/process" method="post">
+            <input type="text" name="Name" </input>
+            <input type="text" name="Location" </input>
+            <input type="submit" value="Click here" </input>
+        </form>
+    </body>
+</head>
+
+</html>

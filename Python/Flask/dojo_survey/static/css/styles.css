@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+}
+
+#wrapper {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#wrapper form div,
+#wrapper div {
+    margin-bottom: 10px;
+}
+
+#wrapper>form>div:nth-child(4)>textarea {
+    margin-top: 10px;
+}
+
+.fixed-width {
+    float: right;
+    width: 150px;
+}
+
+#wrapper>form>input[type="submit"] {
+    float: right;
+}
+
+.value {
+    display: inline-block;
+    float: right;
+}
+
+p {
+    display: inline-block;
+    margin: 0px;
+}
+
+#wrapper>h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#go_back {
+    float: right;
+    margin-top: 20px;
+}

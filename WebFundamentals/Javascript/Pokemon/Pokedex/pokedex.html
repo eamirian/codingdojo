@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<style>
+    .story-tile .story-tile-text p {
+        font-size: 20px;
+        line-height: 28px;
+        font-family: 'Metric Light';
+        font-weight: 200;
+        margin-bottom: 35px;
+        color: #707070;
+    }
+    
+    .story-tile-text>p>a {
+        color: #707070;
+    }
+    
+    .story-tile-text>p>a:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .story-tile-text>div.story-cta-container>div>a.icon-lnk {
+        cursor: pointer;
+        cursor: hand;
+    }
+    
+    .story-tile-text>div.story-cta-container>div.link-container {
+        margin-bottom: 15px;
+    }
+    
+    .story-tile-text>div.story-cta-container>div>a>span.icon-desc {
+        font-size: 19px;
+    }
+    
+    .tnt-story-tile-img {
+        position: absolute;
+        bottom: -20px;
+        left: -65px;
+    }
+    
+    @media screen and (min-width: 991px) and (max-width: 1329px) {
+        .tnt-story-tile-img {
+            left: 0px;
+            right: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 991px) {
+        .story-tile-text {
+            text-align: center;
+        }
+        .tnt-story-tile-img>picture>img {
+            margin: auto
+        }
+        .tnt-story-tile-img {
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+        }
+        .story-cta-container {
+            display: inline-block;
+            text-align: left;
+        }
+    }
+    
+    @media screen and (min-width: 767px) and (max-width: 991px) {
+        .story-tile-text>div.story-cta-container>div.link-container {
+            display: inline-block;
+        }
+        .story-cta-container>.link-container:nth-child(-n+2) {
+            margin-right: 25px;
+        }
+    }
+</style>
+<script>
+    var findTileTimer = setInterval(findTile, 1000);
+
+    function findTile() {
+        if ($("#content > div > div > div.parbase.section.trendingGroupComponent > div > div > div.trending-group-col-3.col-md-8.col-xs-12.shift-tiles > div.grid-item.story-tile-container > div > div").length > 0) {
+            $('#content > div > div > div.parbase.section.trendingGroupComponent > div > div > div.trending-group-col-3.col-md-8.col-xs-12.shift-tiles > div.grid-item.story-tile-container > div > div').replaceWith('<div class="story-tile mode-breakout"><div class="container--"><div class="tntcstile" style="padding: 20px; display: block;"><div class="row--"><div class="col--md-6 col--lg-6 col--xs-12" style="z-index: 200;"><div class="story-tile-text"><h3>How can we help?<br></h3><p>Get advice, answers and solutions when you need them. For general questions, call <a href="tel:+16506875817" class="tel">+1-650-687-5817</a>.</p><div class="story-cta-container"><div class="link-container"><a data-analytics-event="how-can-we-help link-track-click" data-analytics-name="Shop Online" href="https://marketplace.hpe.com/home?country=US&amp;locale=en&amp;jumpid=in_hpe2_0_hp_shop_online" target="_self" class="icon-lnk tntlinkspacing lrg-size at-element-marker"> <span class="icon-wrap "> <img class="icon" src="/content/dam/hpe/shared-publishing/homepage2/homepage2-icons/cart.svg" alt="svg icon"> </span> <span class="icon-desc at-element-marker">Buy Online</span> </a></div><div class="link-container"><a data-analytics-event="how-can-we-help link-track-click" data-analytics-name="Get Support" href="/us/en/support.html?jumpid=in_hpe2_0_hp_get_support_now" target="_self" class="icon-lnk tntlinkspacing lrg-size"> <span class="icon-wrap "> <img class="icon" src="/content/dam/hpe/shared-publishing/homepage2/homepage2-icons/wrench.svg" alt="svg icon"> </span> <span class="icon-desc">Get Support</span> </a></div><div class="link-container"><a data-analytics-event="how-can-we-help link-track-click" data-analytics-name="sales chat" class="icon-lnk lrg-size" onclick="MoxieFlyout.open();"> <span class="icon-wrap "> <img class="icon" src="/content/dam/hpe/shared-publishing/homepage2/homepage2-icons/chat.svg" alt="svg icon"> </span> <span class="icon-desc">Chat with Us Now</span> </a></div></div></div></div><div class="col--md-6 col--lg-6 col--xs-12 col--xs-first col--md-last story-img-col" style="z-index: 100;"><div class="tnt-story-tile-img"> <picture class="img-container-1-1 "><!--[if IE 9]><video style="display: none;"><![endif]--> <source data-srcset="/content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-1x-md 1x, /content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-2x-md 2x" media="(min-width: 992px)" srcset="/content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-1x-md 1x, /content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-2x-md 2x"><source data-srcset="/content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-1x-sm 1x, /content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-2x-sm 2x" media="(min-width: 768px)" srcset="/content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-1x-sm 1x, /content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-2x-sm 2x"><!--[if IE 9]></video><![endif]--><!--[if (lte IE 8)]> <img data-sly-test="true" class="img-responsive"src="&#x2f;content&#x2f;dam&#x2f;hpe&#x2f;shared-publishing&#x2f;homepage2&#x2f;howCanWeHelp&#x2f;Homepage-howcanwehelp-support_2x-md.jpg&#x2f;jcr&#x3a;content&#x2f;renditions/image-1x-md" alt="Get Support Now"title="Get Support Now"> <!--<![endif]--> <!--[if (gte IE 9)|!(IE)]><!--> <img data-srcset="/content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-1x-xs 1x, /content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-2x-xs 2x" alt="Get Support Now" class="img-responsive lazyloaded" style="margin-top: 0px; margin-bottom: 0px" title="Get Support Now" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="/content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-1x-xs 1x, /content/dam/hpe/shared-publishing/homepage2/howCanWeHelp/SUPPORT_20161112_21_AGENCY_WALKING_MAN_0199_72.png/jcr:content/renditions/image-2x-xs 2x"> <!--<![endif]--></picture></div></div></div></div></div></div>')
+            $('div.howCanWeHelpComponent.parbase.section').hide()
+            clearInterval(findTileTimer);
+        }
+    }
+</script>
+
+</html>

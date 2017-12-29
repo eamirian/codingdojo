@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Users</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: lightgray;
+        }
+        
+        button {
+            margin-top: 10px;
+        }
+        
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#addusers').submit(function() {
+                // Get all the forms elements and their values in one step
+                var fname = $("input[name=user_fname]").val();
+                var lname = $("input[name=user_lname]").val();
+                var email = $("input[name=user_email]").val();
+                var contact = $("input[name=user_contact]").val();
+                $('#tableusers').append('<tr><td>' + fname + '</td><td>' + lname + '</td><td>' + email + '</td><td>' + contact + '</td></tr>')
+                return false;
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <table id="tableusers" style="width:100%">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Contact #</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>test@gmail.com</td>
+                <td>888-567-8756</td>
+            </tr>
+        </table>
+        <h1>Add User</h1>
+        <hr>
+        <form id="addusers">
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" id="fname" name="user_fname">
+            </div>
+            <div>
+                <label for="name">Last Name:</label>
+                <input type="text" id="lname" name="user_lname">
+            </div>
+            <div>
+                <label for="name">Email Address:</label>
+                <input type="text" id="email" name="user_email">
+            </div>
+            <div>
+                <label for="name">Contact #:</label>
+                <input type="text" id="contact" name="user_contact">
+            </div>
+            <div class="button">
+                <button type="submit">Add User</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
